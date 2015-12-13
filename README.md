@@ -7,7 +7,7 @@
 
 1. `npm i -D react-container-query-container`
 2. initialize the [container queries
-	 prolyfill](https://github.com/ausi/cq-prolyfill) (set `postcss: true` if you're using the [postcss-plugin](https://github.com/ausi/cq-prolyfill/blob/master/docs/postcss.md) :
+	 prolyfill](https://github.com/ausi/cq-prolyfill) (set `postcss: true` if you're using the [postcss-plugin](https://github.com/ausi/cq-prolyfill/blob/master/docs/postcss.md)):
 	```
 	import { initializeContainers } from 'react-container-query-container';
 
@@ -41,7 +41,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/VinSpee/react-container-query-container.git` this repository
 * change into the new directory
 * `npm install`
 
@@ -60,4 +60,4 @@ You will need the following things properly installed on your computer.
 * `nwb build`
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[npm]: https://www.npmjs.org/package/react-container-query-container
