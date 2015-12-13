@@ -13,7 +13,8 @@
   "scripts": {
     "build": "nwb build",
     "clean": "nwb clean",
-    "start": "nwb serve"
+    "start": "nwb serve",
+    "push_pages": "nwb build && git add . && git commit -m 'update demo' && git subtree push --prefix demo/dist/ origin gh-pages"
   },
   "dependencies": {},
   "peerDependencies": {
