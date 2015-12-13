@@ -1,0 +1,39 @@
+{
+  "name": "react-container-query-container",
+  "version": "1.0.0",
+  "description": "A higher-order react component enabling container queries today",
+  "main": "lib/index.js",
+  "jsnext:main": "es6/index.js",
+  "files": [
+    "css",
+    "es6",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build",
+    "clean": "nwb clean",
+    "start": "nwb serve"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": "^0.14.0",
+    "cq-prolyfill": "^0.2.4"
+  },
+  "devDependencies": {
+    "nwb": "~0.4.1",
+    "cq-prolyfill": "^0.2.4",
+    "react": "~0.14.0",
+    "react-dom": "~0.14.0"
+  },
+  "author": "Vince Speelman",
+  "homepage": "",
+  "license": "MIT",
+  "repository": "https://github.com/VinSpee/react-container-query-container.git",
+  "keywords": [
+    "react-component",
+    "container queries",
+    "element queries"
+  ]
+}

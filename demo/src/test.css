@@ -1,0 +1,11 @@
+.Demo {
+	background: cyan;
+}
+
+.Demo:container(width >= 15rem) {
+	background: magenta;
+}
+
+.Demo:container(width >= 20rem) {
+	background: yellow;
+}
