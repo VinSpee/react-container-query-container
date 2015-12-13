@@ -59,5 +59,7 @@ You will need the following things properly installed on your computer.
 
 * `nwb build`
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/react-container-query-container
+[npm-badge]: https://img.shields.io/npm/v/react-container-query-container.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/react-container-query-containe
+
+
