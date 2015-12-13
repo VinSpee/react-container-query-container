@@ -10,6 +10,7 @@
 	 prolyfill](https://github.com/ausi/cq-prolyfill) *once* in the top of your app. (set `postcss: true` if you're using the [postcss-plugin](https://github.com/ausi/cq-prolyfill/blob/master/docs/postcss.md)):
 	```js
 	import { initializeContainers } from 'react-container-query-container';
+	
 	initializeContainers({ postcss: true });
 	```
 3. decorate your component with the higher-order component, passing an optional
