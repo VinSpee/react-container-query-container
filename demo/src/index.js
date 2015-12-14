@@ -1,12 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 import {render} from 'react-dom';
+import cq from 'cq-prolyfill';
 
 import './test.css';
-import ContainerQueryContainer, { initializeContainers } from '../../src';
+import ContainerQueryContainer from '../../src';
 
-initializeContainers({ postcss: true });
+const cqApi = cq({ postcss: false });
 
 @ContainerQueryContainer({
+	cqApi,
 	componentShouldReevaluate: () => console.log('reevaluated.'),
 })
 class DemoComponent extends Component {
