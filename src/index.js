@@ -1,18 +1,21 @@
+import cq from 'cq-prolyfill';
 import React, { Component } from 'react';
 
-const isFunction = (obj) => obj && obj instanceof Function;
+const isFunction = (obj) => obj && obj instanceof Function ? true : false;
 
 const Container = (args = {
+	cqAPI: false,
 	componentShouldReevaluate: false,
 }) => {
 	const {
-		cqApi,
+		cqAPI,
 		componentShouldReevaluate,
 	} = args;
+
 	return (ComponentToContain) => {
 		return class extends Component {
 			reevaluate(clearCache = false, callback) {
-				cqApi.reevaluate(clearCache, () => {
+				cqAPI.reevaluate(clearCache, () => {
 					if (isFunction(callback)) {
 						return callback();
 					} else {
@@ -22,7 +25,7 @@ const Container = (args = {
 			}
 
 			reparse(callback) {
-				cqApi.reparse(() => {
+				cqAPI.reparse(() => {
 					if (isFunction(callback)) {
 						return callback();
 					} else {
@@ -32,7 +35,7 @@ const Container = (args = {
 			}
 
 			reprocess(callback) {
-				cqApi.reprocess(() => {
+				cqAPI.reprocess(() => {
 					if (isFunction(callback)) {
 						return callback();
 					} else {
@@ -52,7 +55,7 @@ const Container = (args = {
 	};
 };
 
-
 export {
 	Container as default,
+	cq,
 };

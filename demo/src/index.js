@@ -1,14 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 import {render} from 'react-dom';
-import cq from 'cq-prolyfill';
 
 import './test.css';
-import ContainerQueryContainer from '../../src';
+import ContainerQueryContainer, { cq } from '../../src';
 
-const cqApi = cq({ postcss: false });
+const cqAPI = cq({ postcss: false });
 
 @ContainerQueryContainer({
-	cqApi,
+	cqAPI,
 	componentShouldReevaluate: () => console.log('reevaluated.'),
 })
 class DemoComponent extends Component {
@@ -29,13 +28,13 @@ const Demo = React.createClass({
 		return (
 			<div>
 				<h1>Container Query Container Demo</h1>
-				<div style={{'max-width': '10rem'}}>
+				<div style={{'maxWidth': '10rem'}}>
 					<DemoComponent name="Testing" />
 				</div>
-				<div style={{'max-width': '15rem'}}>
+				<div style={{'maxWidth': '15rem'}}>
 					<DemoComponent name="Testing" />
 				</div>
-				<div style={{'max-width': '20rem'}}>
+				<div style={{'maxWidth': '20rem'}}>
 					<DemoComponent name="Testing" />
 				</div>
 			</div>
