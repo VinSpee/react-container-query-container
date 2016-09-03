@@ -1,6 +1,3 @@
 /coverage
-/lib
 /node_modules
-/umd
-/es6
 npm-debug.log
