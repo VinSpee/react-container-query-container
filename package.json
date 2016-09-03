@@ -1,6 +1,6 @@
 {
   "name": "react-container-query-container",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A higher-order react component enabling container queries today",
   "main": "lib/index.js",
   "jsnext:main": "es6/index.js",
