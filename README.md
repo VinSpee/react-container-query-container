@@ -8,13 +8,13 @@
 1. `npm i -D react-container-query-container`
 2. initialize the [container queries
 	 prolyfill](https://github.com/ausi/cq-prolyfill) *once* in the top of your app. (set `postcss: true` if you're using the [postcss-plugin](https://github.com/ausi/cq-prolyfill/blob/master/docs/postcss.md)):
-	```js
+	```
 	import ContainerQueryContainer, { cq } from 'react-container-query-container';
 	const cqAPI = cq({ postcss: true });
 	```
 3. decorate your component with the higher-order component, passing an optional
 	 callback to execute when the component is reevaluated:
-	```js
+	```
 	@ContainerQueryContainer({
 		cqAPI,
 		componentShouldReevaluate: () => console.log('reevaluated.'),
