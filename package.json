@@ -18,14 +18,14 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "^0.14.0",
-    "cq-prolyfill": "^0.2.4"
+    "react": "^0.14.0 || ^15.0.0",
+    "cq-prolyfill": "^0.3.0"
   },
   "devDependencies": {
     "nwb": "~0.4.1",
-    "cq-prolyfill": "^0.2.4",
-    "react": "~0.14.0",
-    "react-dom": "~0.14.0"
+    "cq-prolyfill": "^0.3.0",
+    "react": "~0.14.0 || ^15.0.0",
+    "react-dom": "~0.14.0 || ^15.0.0"
   },
   "author": "Vince Speelman",
   "homepage": "",
